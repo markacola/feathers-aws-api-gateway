@@ -1,0 +1,61 @@
+{
+  "name": "feathers-aws-api-gateway",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/",
+  "scripts": {
+    "prepublish": "npm run compile",
+    "compile": "shx rm -rf lib/ && tsc",
+    "test": "mocha --config ./.mocharc.json --recursive test/**.test.ts test/**/*.test.ts"
+  },
+  "keywords": [
+    "feathers",
+    "feathers-plugin"
+  ],
+  "author": {
+    "name": "Mark Cola",
+    "email": "mark@doomsdaytuna.com",
+    "url": "git://github.com/markacola/feathers-aws-api-gateway"
+  },
+  "bugs": {
+    "url": "https://github.com/markacola/feathers-aws-api-gateway/issues"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "src/**",
+    "lib/**",
+    "*.d.ts",
+    "*.js"
+  ],
+  "directories": {
+    "lib": "lib"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@feathersjs/commons": "^5.0.0-pre.9",
+    "@feathersjs/feathers": "^5.0.0-pre.9",
+    "@feathersjs/memory": "^5.0.0-pre.9",
+    "@types/assert": "^1.5.6",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.7.4",
+    "@types/ws": "^7.4.7",
+    "assert": "^2.0.0",
+    "aws-lambda-ws-server": "^0.1.21",
+    "mocha": "^9.1.0",
+    "shx": "^0.3.3",
+    "source-map-support": "^0.5.19",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "@feathersjs/commons": "^5.0.0-pre.9",
+    "@feathersjs/transport-commons": "^5.0.0-pre.9",
+    "aws-post-to-connection": "^0.1.21",
+    "is-lambda": "^1.0.1",
+    "ws": "^8.2.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "include": ["src/**/*", "tests/**/*", "lib.d.ts"],
+  "compilerOptions": {
+    "outDir": "lib",
+    "target": "es2015",
+    "module": "commonjs",
+    "declaration": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "esModuleInterop": true
+  }
+}
